@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://image.winudf.com/v2/image1/Y29tLmFwcC5wZWxpc2ZsaXhfc2NyZWVuXzBfMTYyMDI2MzkwM18wNDY/screen-0.jpg?fakeurl=1&type=.jpg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="divimg-nav">
+                <img src="logo.png" alt="logo">
+            </div>
+            <ul id="menuList" class="div1-nav">
+                <li><i class="fa-solid fa-house-chimney" style="color: #127bd5"></i><a href="#main">INICIO</a></li>
+                <li><i class="fa-solid fa-film" style="color: #127bd5"></i><a href="#tendencia">TENDENCIA</a></li>
+                <li><i class="fa-solid fa-film" style="color: #127bd5"></i><a href="#estrenos">ESTRENOS</a></li>
+                <li><i class="fa-solid fa-tv" style="color: #127bd5"></i><a href="#series">SERIES</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" style="color: white;" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+        
+    </header>
+
+    <main id="main">
+        <div>
+            <h1>Búsqueda implacable 3</h1>
+        <h3>Titulo Original: Taken 3</h3>
+        <br>
+        <p class="p-principal">Después de ser incriminado por la muerte de su querida exesposa, 
+            el exoficial <br> encubierto Bryan Mills canaliza su enojo y sus habilidades 
+            particulares para <br> vengarse de los verdaderos asesinos y proteger a su hija.</p>
+        <p>Director: Olivier Megaton</p>
+        <p>Género: Acción, Suspenso, Policial</p>
+        <button class="button-main"><i class="fa-solid fa-play" style="color: #ffffff;"></i><span class="span-button-main">VER AHORA</span></button>
+        </div>
+        <div class="image">
+            <img class="img-taken1" src="fondo.jpg" alt="">
+        </div>
+    </main>
+    
+
+
+    <!-- PELICULAS TENDENCIA -->
+    <div id="tendencia" class="container">
+        <div style="display: flex; justify-content: start; align-items: center; gap: 20px;">
+            <i class="fa-solid fa-fire" style="color: #f65c09;"></i>
+            <h2 style="color: white;">Tendencia</h2>
+        </div>
+        <div class="card-container"></div>
+    </div>
+
+    <!-- PELICULAS RECIEN ESTRENADAS -->
+    <div id="estrenos" class="container-recien-estrenadas">
+        <div style="display: flex; justify-content: start; align-items: center; gap: 20px;">
+            <i class="fa-solid fa-ticket" style="color: #FFD43B;"></i>
+            <h2 style="color: white;">Recién Estrenadas</h2></div>
+        <div class="card-container-recien-estrenadas"></div>
+    </div>
+
+    <div id="series" class="container-series-populares">
+        <div style="display: flex; justify-content: start; align-items: center; gap: 20px;">
+            <i class="fa-solid fa-ticket" style="color: #FFD43B;"></i>
+            <h2 style="color: white;">Series Populares</h2></div>
+        <div class="card-container-series-populares"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

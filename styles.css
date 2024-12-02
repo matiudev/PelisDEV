@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Freeman&display=swap");
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px 120px 200px 120px;
+  background-color: #121b24;
+  scrollbar-color: #0f76dd black;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #21303f;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #10182c;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  width: 100%;
+}
+
+.divimg-nav {
+  width: 140px;
+}
+
+.divimg-nav img {
+  width: 100%;
+}
+
+.div1-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.div1-nav li {
+  list-style: none;
+}
+
+.div1-nav li a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  font-family: "Freeman", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* FIN HEADER */
+
+/* MAIN */
+
+main {
+  padding: 90px 0;
+  color: white;
+}
+
+.button-main {
+  margin-top: 30px;
+  background-color: #127bd5;
+  border-style: none;
+  border-radius: 5px;
+  width: 140px;
+  height: 40px;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.span-button-main {
+  color: white;
+  font-weight: bold;
+}
+
+.image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  z-index: -1;
+  overflow: hidden;
+  mask-image: linear-gradient(black 10%, transparent);
+}
+
+/* FIN MAIN */
+
+/* PELICULAS TENDENCIA */
+
+.container {
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Alinea las tarjetas al inicio del contenedor */
+  gap: 30px;
+  color: white;
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+.card img {
+  width: auto;
+  /* Ajustamos el ancho automáticamente */
+  height: 100%;
+  /* Establecemos una altura del 100% */
+  /* max-width: 206px; */
+  max-height: 304px;
+  /* Altura máxima de la imagen */
+  border-radius: 8px 8px 0 0;
+}
+
+.card-content {
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  height: 50px;
+  /* Altura fija para el contenedor del título */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* Trunca el texto si es demasiado largo */
+  white-space: nowrap;
+  /* Evita que el texto se ajuste automáticamente a varias líneas */
+  display: flex;
+  align-items: center;
+  /* Alinea verticalmente el contenido */
+}
+
+/* FIN PELICULAS TENDENCIA */
+
+/* PELICULAS RECIEN ESTRENADAS */
+
+.card-container-recien-estrenadas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Alinea las tarjetas al inicio del contenedor */
+  gap: 30px;
+}
+
+/* FIN PELICULAS RECIEN ESTRENADAS */
+
+/* SERIES POPULARES */
+
+.card-container-series-populares {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Alinea las tarjetas al inicio del contenedor */
+  gap: 30px;
+}
+
+.movie-details {
+  position: absolute;
+  z-index: 1;
+  padding-bottom: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 55%,
+    rgba(38, 38, 38, 1) 100%
+  );
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 336px;
+  height: 400px;
+  display: none;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  border-radius: 20px;
+}
+
+.movie-details img {
+  width: -webkit-fill-available;
+  height: 150px;
+}
+
+.movie-details.show {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i {
+    color: white;
+    font-size: 30px;
+}
+
+@media (max-width:600px) {
+
+    body {
+        padding: 0px 0px;
+    }
+
+    header {
+      padding-top: 20px;
+      background-color: #010101;
+    }
+
+    main {
+        padding: 90px 20px;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 50px;
+    }
+
+    nav ul {
+        position: absolute;
+        padding: 0px;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #121b24;
+        gap: 0px;
+        overflow: hidden;
+    }
+
+    nav ul li {
+        padding: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menuList {
+        transition: all 0.5s;
+        z-index: 10;
+    }
+}
