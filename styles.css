@@ -3,8 +3,9 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 20px 120px 200px 120px;
-  background-color: #121b24;
+  padding: 20px 120px 120px 120px;
+  background: rgb(22,21,46);
+  background: linear-gradient(90deg, rgba(22,21,46,1) 0%, rgba(15,7,23,1) 100%);
   scrollbar-color: #0f76dd black;
 }
 
@@ -174,6 +175,11 @@ main {
 
 /* PELICULAS RECIEN ESTRENADAS */
 
+.container-recien-estrenadas {
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
 .card-container-recien-estrenadas {
   display: flex;
   flex-wrap: wrap;
@@ -185,6 +191,11 @@ main {
 /* FIN PELICULAS RECIEN ESTRENADAS */
 
 /* SERIES POPULARES */
+
+.container-series-populares {
+  margin: 20px auto;
+  padding: 0 20px;
+}
 
 .card-container-series-populares {
   display: flex;
@@ -285,5 +296,23 @@ main {
     #menuList {
         transition: all 0.5s;
         z-index: 10;
+    }
+
+    .modalContenido {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagenHorizontal {
+      width: 90% !important;
+      margin-top: 80px !important;
+    }
+
+    .detalles {
+      width: 70% !important;
+      background-color: transparent !important;
+      border: none !important;
+      padding: 10px 35px 35px 35px !important;
     }
 }
